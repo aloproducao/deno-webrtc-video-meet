@@ -88,7 +88,7 @@ function init(token, stream) {
       localStream = stream;
       info = data;
       document.getElementById("settings").style.display = "inline-block";
-      document.getElementById("me").innerHTML = `Me: ${info.id}`;
+      document.getElementById("me").innerHTML = `Eu: ${info.id}`;
     } else if (type === "initSend") addPeer(data.id, true);
     else if (type === "removePeer") removePeer(data.id);
     else if (type === "signal") peers[data.id].signal(data.signal);

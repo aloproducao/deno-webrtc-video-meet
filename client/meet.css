@@ -71,6 +71,7 @@ body {
   bottom: 60px;
   right: 0;
   left: 10px;
+  background-color: #4c3b7a !important;
 }
 .chat-message {
   color: #000;
