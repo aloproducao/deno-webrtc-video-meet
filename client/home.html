@@ -8,16 +8,18 @@
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="./home.css"/>
     <title>n.meet</title>
+
+    <meta name="description" content="Video chamada facil e rapido sempre a mão">
 </head>
 
 <body>
     <div id="home">
         <div style="text-align: center; width: 100%; margin-top: 40px;">
             <img src="https://i.imgur.com/8eUyj2z.png" alt="deno" width="150" />
-            <h1 style="margin-bottom: 5px">n.meet</h1>
-            <div style="margin-bottom: 15px">WebRTC simples com websocket nativo Deno</div>
+            <h1 style="margin-bottom: 5px; display: none;">n.meet</h1>
+            <div style="margin-bottom: 15px">Vídeo chamada simples e rápida.</div>
             <form id="form">
-                <input title="Can't use special character" class="my-input" type="text" id="room" placeholder="Room (no special char)" pattern="^[a-zA-Z0-9]+$" required />
+                <input title="Can't use special character" class="my-input" type="text" id="room" placeholder="Sala (sem caracteres especiais)" pattern="^[a-zA-Z0-9]+$" required />
                 <input class="my-input" type="email" id="username" placeholder="Email" required />
                 <input class="my-input" type="submit" value="Join / Create">
             </form>
