@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <meta charset="utf-8"/>
 
 <head>
     <title>n.meet</title>
@@ -19,16 +20,16 @@
                 </div>
             </div> 
         </div>
-        <br />
+        <br /> <div style="display: block;">
         <div class="settings" id="settings" style="display: none;">
             <button id="switchButton" class="button" onclick="switchMedia()">
-                Alternar câmera
+                Alternar camera
             </button>
             <button id="muteButton" class="button" onclick="toggleMute()">
                 Sem som
             </button>
             <button id="vidButton" class="button" onclick="toggleVid()">
-                Vídeo ativado
+                Video ativado
             </button>
             <button class="button" onclick="shareScreen()">
                 Compartilhar tela
@@ -43,6 +44,8 @@
                 Sair
             </button>
         </div>
+
+    </div>
         <div class="chat-container" id="chatbox" style="display: none;">
             <button type="button" onclick="closeChat()"><b>X</b></button>
             <div class="chat-inner" id="chatMessage">
