@@ -34,7 +34,7 @@ if (redirectToHttps && !isHttps) {
     window.location.href.replace("http://", "");
 }
 const configuration = {
-  "iceServers": [
+  "turn": [
   
 
     {
