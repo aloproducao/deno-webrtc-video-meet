@@ -56,10 +56,10 @@ let constraints = {
   audio: true,
   video: {
     width: {
-      max: 300,
+      min: 300,
     },
     height: {
-      max: 300,
+      min: 300,
     },
   },
 };
@@ -249,8 +249,8 @@ function toggleMute() {
     localStream.getAudioTracks()[index].enabled = !localStream
       .getAudioTracks()[index].enabled;
     muteButton.innerText = localStream.getAudioTracks()[index].enabled
-      ? "Unmuted"
-      : "Muted";
+    ? "Com som"
+    : "mudo";
   }
 }
 function toggleVid() {
@@ -258,20 +258,20 @@ function toggleVid() {
     localStream.getVideoTracks()[index].enabled = !localStream
       .getVideoTracks()[index].enabled;
     vidButton.innerText = localStream.getVideoTracks()[index].enabled
-      ? "Video Enabled"
-      : "Video Disabled";
+      ? "Vídeo ativado"
+      : "Vídeo desativado";
   }
 }
 function updateButtons() {
   for (let index in localStream.getVideoTracks()) {
     vidButton.innerText = localStream.getVideoTracks()[index].enabled
-      ? "Video Enabled"
-      : "Video Disabled";
+      ? "Vídeo ativado"
+      : "Vídeo desativado";
   }
   for (let index in localStream.getAudioTracks()) {
     muteButton.innerText = localStream.getAudioTracks()[index].enabled
-      ? "Unmuted"
-      : "Muted";
+      ? "Com som"
+      : "mudo";
   }
 }
 
@@ -284,7 +284,7 @@ function inviteFriend() {
   const result = document.execCommand("copy");
   document.body.removeChild(input);
   if (result) {
-    alert("Link was copied to clipboard");
+    alert("O link foi copiado para a área de transferência");
   }
 }
 chatForm.onsubmit = (e) => {
@@ -298,7 +298,7 @@ chatForm.onsubmit = (e) => {
   }));
   chatMessage.innerHTML += `
     <div class="chat-message">
-      <b>Me: </b>${chatInput.value}
+      <b>Eu: </b>${chatInput.value}
     </div>
   `;
   chatInput.value = "";
