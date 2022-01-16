@@ -50,6 +50,17 @@ const configuration = {
     {
       "urls": "stun:stun4.l.google.com:19302",
     },
+
+    {
+      url: 'turn:numb.viagenie.ca',
+      credential: 'M2912q!#',
+      username: 'contato@navve.co'
+    },
+
+
+
+
+
   ],
 };
 let constraints = {
